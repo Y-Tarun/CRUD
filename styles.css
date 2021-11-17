@@ -1,0 +1,146 @@
+body {
+   margin: auto 0;
+   background-color: #EEEBDD;
+}
+#container {
+   
+   margin: 10px auto;
+   overflow: hidden;
+   align-items: center;
+}
+.footer {
+   overflow: hidden;
+
+   background-color: #e2c275;
+}
+h1 {
+   font-size: 3.5rem;
+   color: #630000;
+   margin: 0;
+   padding-top: 40px;
+   text-align: center;
+}
+.header {
+   align-items: baseline;
+   margin: 0;
+   height: 150px;
+   background-color: #E2C275;
+}
+.profile-picture {
+   /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); */
+   background-color: white;
+   /* object-fit: contain; */
+   margin: 25px auto;
+   border-radius: 50%;
+   border: 5px solid white;
+   width: 200px;
+   height: 200px;
+}
+.profile-picture:hover {
+   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+   margin: 20px auto;
+   border-radius: 50%;
+   border: 0px solid white;
+   
+   width: 200px;
+   height: 200px;
+  
+}
+.profile-container {
+   overflow: hidden;
+   
+   z-index: 0;
+   position: relative;
+   text-align: center;
+   /* border: 2px solid; */
+   margin: 15px 25px;
+   width: 250px;
+   height: 350px;
+   border-radius: 20px;
+   /* float: left; */
+   display: inline-block;
+}
+.profile-container:hover {
+   z-index: 1;
+   transform: scale(1.1);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   background-color: #FEF5ED;
+   text-align: center;
+   border: 2px solid #EEEBDD;
+   margin: 15px 25px;
+
+   border-radius: 20px;
+ 
+}
+
+
+.id {
+   text-align: left;
+   margin: 10px 15px 0;
+
+   width: 250px;
+   height: 20px;
+}
+.name {
+   font-style: italic;
+   font-weight: bold;
+   font-size: 20px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 0;
+   width: 250px;
+   height: 20px;
+}
+
+.email {
+   text-align: left;
+   margin: 0 15px;
+   width: 250px;
+   height: 20px;
+}
+.new {
+   border: 8px solid #69dadb;
+}
+
+.new-user {
+   float: left;
+   margin: 30px;
+   width: 500px;
+}
+.form-floating {
+   margin-top: 5px;
+}
+.btn {
+   margin-top: 20px;
+}
+.delete {
+   float: left;
+   margin: 30px;
+   width: 500px;
+}
+
+.update {
+   float: left;
+   margin: 30px;
+   width: 500px;
+}
+
+.material-icons-round{
+   position: absolute;
+   right:10px;
+   top: 10px; 
+   color: black;
+}
+.material-icons-round:hover{
+   position: absolute;
+   right:10px;
+   top: 10px; 
+   font-size: 2rem;
+   color: red;
+}
+.profile-container span{
+   visibility: hidden;
+}
+.profile-container:hover span{
+   visibility: visible;
+}

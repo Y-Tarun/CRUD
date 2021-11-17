@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+
+      
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="header">
+      <h1><b>EMPLOYEE LIST</b></h1>
+      <i class="fas fa-user-minus"></i>
+   </div>
+
+   <div id="container">
+
+   </div>
+   <div class="footer ">
+      <div class="row align-items-end">
+         <div class="new-user col">
+
+            <label for="ImageInput">Upload Image with url</label>
+            <!-- <input type="file" class="form-control" id="ImageInput" /> -->
+            <input type="url" class="form-control" id="ImageInput" />
+
+            <label for="FirstNameInput">First Name</label>
+            <input type="text" class="form-control" id="FirstNameInput" placeholder="Enter First Name" />
+            <!-- <input type="text" class="form-control" id="FirstNameInput" value="D" placeholder="Enter First Name" /> -->
+            <label for="LastNameInput">Last Name</label>
+            <input type="text" class="form-control" id="LastNameInput" placeholder="Enter Last Name" />
+            <!-- <input type="text" class="form-control" value="V" id="LastNameInput" placeholder="Enter Last Name" /> -->
+
+            <label for="IDInput">Employee ID</label>
+            <input class="form-control" id="IDInput" placeholder="Enter Employee ID" />
+            <!-- <input class="form-control" id="IDInput" value="1212" placeholder="Enter Employee ID" /> -->
+
+            <label for="EmailInput">E-mail address</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com" />
+            <!-- <input type="email" class="form-control" id="EmailInput" value="d@m.com" placeholder="name@example.com" /> -->
+
+            <button class="w-100 btn btn-lg btn-success" type="submit" onclick="createEmployee()">Add</button>
+         </div>
+
+         
+            <div class="update col">
+            <label for="UpdateIDInput">Employee ID</label>
+            <input class="form-control" id="UpdateIDInput" placeholder="Enter Employee ID" />
+            <!-- <input class="form-control" id="IDInput" value="1212" placeholder="Enter Employee ID" /> -->
+
+            <label for="UpdateImageInput">Upload Image with url</label>
+            <!-- <input type="file" class="form-control" id="ImageInput" /> -->
+            <input type="url" class="form-control" id="UpdateImageInput" />
+
+            <label for="UpdateFirstNameInput">First Name</label>
+            <input type="text" class="form-control" id="UpdateFirstNameInput" placeholder="Enter First Name" />
+            <!-- <input type="text" class="form-control" id="FirstNameInput" value="D" placeholder="Enter First Name" /> -->
+            <label for="UpdateLastNameInput">Last Name</label>
+            <input type="text" class="form-control" id="UpdateLastNameInput" placeholder="Enter Last Name" />
+            <!-- <input type="text" class="form-control" value="V" id="LastNameInput" placeholder="Enter Last Name" /> -->
+           
+            <label for="UpdateEmailInput">E-mail address</label>
+            <input type="email" class="form-control" id="UpdateEmailInput" placeholder="name@example.com" />
+            <!-- <input type="email" class="form-control" id="EmailInput" value="d@m.com" placeholder="name@example.com" /> -->
+
+            <button class="w-100 btn btn-lg btn-success" type="submit" onclick="updateEmployee()">Update</button>
+            </div>         
+                         
+         </div>
+         <!-- <div class="delete ">              
+            <label for="empid">Employee ID </label>
+            <input type="text" class="form-control" id="empid" placeholder="Enter Employee ID to delete"></input>
+            <button class="w-100 btn btn-lg btn-danger" onclick="deleteEmployee()">Delete Employee</button>
+         </div> -->
+   </div>
+
+   <script src="index.js"></script>
+</body>
+
+</html>
